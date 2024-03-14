@@ -9,12 +9,12 @@
 	<constant name="struts.custom.i18n.resources" value="/resources/mensajes_es"/>
 	
    	<package name="default" extends="struts-default">
-   		<action name="acceder" class="actions.LoginAction" method="execute">
+   		<action name="acceder" class="src.main.java.actions.LoginAction" method="execute">
      	 	<result name="success">/AccesoOK.jsp</result>
       		<result name="error">/AccesoError.jsp</result>
   		</action>
   		
-  		   <action name="guardarDatos" class="actions.GuardarDatosAction" method="execute">
+  		   <action name="guardarDatos" class="src.main.java.actions.GuardarDatosAction" method="execute">
      	 	<result name="success">/AccesoOK.jsp</result>
       		<result name="error">/AccesoError.jsp</result>
       		<result name="input">/AccesoError.jsp</result> 

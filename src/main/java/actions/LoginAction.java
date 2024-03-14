@@ -1,4 +1,4 @@
-package actions;
+package src.main.java.actions;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -37,7 +37,7 @@ public class LoginAction extends ActionSupport {
 
 
 			try {
-				// comprobar que no existe una conexión anterior abierta
+				// comprobar que no existe una conexiï¿½n anterior abierta
 				if (conn == null || conn.isClosed()) {
 					
 					Class.forName("com.mysql.jdbc.Driver"); // es necesario en los Action
@@ -65,7 +65,7 @@ public class LoginAction extends ActionSupport {
 		ResultSet rs = null;
 		String nombre= null;
 
-		try {//si no hay conexión disponible, pido crearla.
+		try {//si no hay conexiï¿½n disponible, pido crearla.
 		if (conn == null)
 			conn = getConexion();
 
@@ -85,14 +85,14 @@ public class LoginAction extends ActionSupport {
 			System.out.println("Error." + e.getMessage());
 		} finally {
 			try {
-				// Cerrar conexión y resto de recursos
+				// Cerrar conexiï¿½n y resto de recursos
 				conn.close();
 				st.close();
 				rs.close();
 				// devolver resultado
 				return nombre;
 			} catch (Exception e2) {
-				// Si hay excepción 
+				// Si hay excepciï¿½n 
 				return nombre;
 			}
 		}

@@ -17,7 +17,7 @@ public class GuardarDatosAction extends ActionSupport {
 	String observaciones;
 	String datosAnyadidos = "";
 	
-
+ 
 
 	Connection conn = null; // conexion a BD
 	
