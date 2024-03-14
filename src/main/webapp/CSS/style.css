@@ -1,0 +1,48 @@
+body {
+	background-color: lightblue;
+	/* border: 2px solid black;
+   border-style: dotted;*/
+}
+
+h1 {
+	color: red;
+	margin-left: 20px;
+}
+
+label {
+	font-size: 20px;
+	font-family: fantasy;
+}
+
+input[type=submit] { /* para botones submit*/
+	font-size: 20px;
+	font-family: "Segoe UI";
+	font-family: cursive;
+	width: 100px;
+	color: white;
+	background-color: grey;
+}
+
+div {
+	padding: 40px 0;
+	/* border: 3px solid green;
+  text-align: center;*/
+}
+
+#contenedor {
+	width: 320px;
+	height: 90px; margin-left : auto;
+	margin-right: auto;
+	text-align: center;
+	border: 3px solid green;
+	margin-left: auto;
+}
+
+#contenedor2 {
+	width: 320px;
+	height: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border: 3px solid blue;
+}
