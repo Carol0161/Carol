@@ -1,4 +1,4 @@
-package actions;
+package src.main.java.actions;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -35,7 +35,7 @@ public class GuardarDatosAction extends ActionSupport {
 
 
 		try {
-			// comprobar que no existe una conexión anterior abierta
+			// comprobar que no existe una conexiï¿½n anterior abierta
 			if (conn == null || conn.isClosed()) {
 				
 				Class.forName("com.mysql.jdbc.Driver"); // es necesario en los Action
@@ -62,7 +62,7 @@ public class GuardarDatosAction extends ActionSupport {
 		String nombre= null;
 		int numFilas = 0;
 
-		try {//si no hay conexión disponible, pido crearla.
+		try {//si no hay conexiï¿½n disponible, pido crearla.
 		if (conn == null)
 			conn = getConexion();
 
@@ -91,13 +91,13 @@ public class GuardarDatosAction extends ActionSupport {
 			System.out.println("Error." + e.getMessage());
 		} finally {
 			try {
-				// Cerrar conexión y resto de recursos
+				// Cerrar conexiï¿½n y resto de recursos
 				conn.close();
 				st.close();
 				// devolver resultado
 				return ( numFilas > 0);
 			} catch (Exception e2) {
-				// Si hay excepción 
+				// Si hay excepciï¿½n 
 				return false;
 			}
 		}
